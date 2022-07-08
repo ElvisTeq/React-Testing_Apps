@@ -5,3 +5,36 @@
 
 --------------------------------------------------------- npm test
 Runs "test()" function inside "App.test.js"
+
+////////////////////////////////////////////////////////////////////////////////////////////////
+
+## 2 Writting our own test
+
+- Created
+  => "Greeting.js"
+  => Module Returns a <div> & <p>
+
+- "App.js"
+  => Rendering the created <Greeting> component
+
+- Created
+  => "Greeting.test.js"
+  => Created { test() } function
+  => { render(<Component>) } To Select location to test
+  => { screen.getByText('') } To Get Text/Data
+  => { expect().toBeInTheDocument() } To check if "Text/Data" is in the doc
+
+- Deleted
+  => "App.test.js"
+
+--------------------------------------------------------- test()
+global available function from React
+
+--------------------------------------------------------- render(<Component>)
+To Select location to test
+
+--------------------------------------------------------- screen.getByText('')
+To Get Text/Data from screen (To get what to test)
+
+--------------------------------------------------------- expect(SCREEN_DATA).toBeInTheDocument()
+To check if "Text/Data" is in the doccument (test)
