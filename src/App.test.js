@@ -1,8 +1,9 @@
-import { render, screen } from '@testing-library/react';
-import App from './App';
+import { render, screen } from "@testing-library/react";
+import App from "./App";
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+// test function => npm test
+test("renders learn react link", () => {
+  render(<App />); // Location to test
+  const linkElement = screen.getByText(/learn react/i); // get /text/ (i) => not case sensitive
+  expect(linkElement).toBeInTheDocument(); // fint (/text/i)
 });

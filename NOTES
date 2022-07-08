@@ -1,0 +1,7 @@
+## 1 Running first test
+
+- "App.test.js"
+  => File to Test "App.js"
+
+--------------------------------------------------------- npm test
+Runs "test()" function inside "App.test.js"
