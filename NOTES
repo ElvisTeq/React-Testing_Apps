@@ -38,3 +38,13 @@ To Get Text/Data from screen (To get what to test)
 
 --------------------------------------------------------- expect(SCREEN_DATA).toBeInTheDocument()
 To check if "Text/Data" is in the doccument (test)
+
+////////////////////////////////////////////////////////////////////////////////////////////////
+
+## 3 Grouping Test Together With Test Suites
+
+- "Greeting.test.js"
+  => Using { describe() } to group test Suites
+
+--------------------------------------------------------- describe('DESCRIPTION', () => { test('') })
+to group test Suites
