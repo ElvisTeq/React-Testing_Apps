@@ -85,3 +85,26 @@ To check if is null (not exist)
   => Wrapped out <Output> Component
 
 **\*** React Test Automatically Test Connected Components **\***
+
+////////////////////////////////////////////////////////////////////////////////////////////////
+
+## 6 Testing Async Code
+
+- Created
+  => "Async.js"
+  => { useEffect } to send HTTP Request
+  => returns items as JSX
+
+- Created
+  => "Async.test.js"
+  => { describe() } To create a Suite (list) of tests
+  => { test('', async() => {}) } creating async/await test() function
+  => { await screen.findAllByRole } To find async data
+
+------------------------------------------------- await screen.findAllByRole('anyData', {exact:}, {timeout:})
+Return a promise
+Get All "anyData" data
+{timeout:} => stop waiting for data
+
+------------------------------------------------- screen.getAllByRole('anyName')
+Get All "anyName" data
