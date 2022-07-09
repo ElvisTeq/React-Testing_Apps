@@ -73,3 +73,15 @@ To get data (Null if not exist)
 
 ---------------------------------------------------------- expect(SCREEN_DATA).toBeNull()
 To check if is null (not exist)
+
+////////////////////////////////////////////////////////////////////////////////////////////////
+
+## 5 Testing Connected Components
+
+- Created
+  => "Output.js"
+
+- "Greeting.js"
+  => Wrapped out <Output> Component
+
+**\*** React Test Automatically Test Connected Components **\***
