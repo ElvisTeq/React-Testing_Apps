@@ -3,6 +3,12 @@ import Async from "./Async";
 
 describe("Async component", () => {
   test("renders posts if request succeeds", async () => {
+    // Creating DUMMY function (Mock) To avoid sending HTTP for testing
+    window.fetch = jest.fn();
+    window.fetch.mockResolvedValueOnce({
+      json: async () => [{ id: "p1", title: "First post" }],
+    });
+
     // Test location
     render(<Async />);
 

@@ -108,3 +108,19 @@ Get All "anyData" data
 
 ------------------------------------------------- screen.getAllByRole('anyName')
 Get All "anyName" data
+
+////////////////////////////////////////////////////////////////////////////////////////////////
+
+## 7 Working with Mocks
+
+**\*** Not Recommended to send HTTP only for Testing **\***
+Instead we want to only test our code without senting HTTP request using (Mocks) a DUMMY function
+
+- "Async.test.js"
+  => Creating a (Mock) Function (DUMMY function to simnulate a HTTP request)
+
+------------------------------------------------- window.fetch = jest.fn()
+To create (MOCK) function
+
+------------------------------------------------- window.fetch.mockResolvedValueOnce({ json: async () => [{ data }] })
+To add (MOCK) data to the function
