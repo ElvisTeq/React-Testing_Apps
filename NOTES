@@ -124,3 +124,16 @@ To create (MOCK) function
 
 ------------------------------------------------- window.fetch.mockResolvedValueOnce({ json: async () => [{ data }] })
 To add (MOCK) data to the function
+
+////////////////////////////////////////////////////////////////////////////////////////////////
+
+## 8 More Testing Resources
+
+- Jest.js
+  => JS Testing
+  => More (MOCK) functions
+
+- React Testing Library
+
+- React-hooks-testing-library
+  => For hook testing
